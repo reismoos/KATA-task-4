@@ -1,0 +1,93 @@
+body {
+    background-color: grey;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.search-input {
+    background-color: rgb(216, 216, 216);
+    position: relative;
+    margin-bottom: 160px;
+}
+
+input {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(216, 216, 216);
+    border: none;
+}
+
+.autocomplite-box {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.autocomplite__item {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+.autocomplite__item:hover {
+    background-color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+
+.repo-card {
+    padding: 10px;  
+    background-color: #56a13f;
+    position: relative;
+}
+
+/* .repo-card::before {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+.repo-card::after {
+    content: '';
+    width: 5px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+} */
+
+.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #fff;
+    transition: 0.2s;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.close:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-name, .card-owner, .card-stars {
+    margin: 0;
+}
